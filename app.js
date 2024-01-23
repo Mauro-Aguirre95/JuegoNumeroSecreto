@@ -11,10 +11,7 @@ function asignarTextoElemento(elemento, texto) {
 function verificarIntento() {
   let numeroUsuario = parseInt(document.getElementById("valorUsuario").value);
   if (numeroUsuario === numeroSecreto) {
-    asignarTextoElemento(
-      "p",
-      `Advinaste el numero en ${intentos} ${intentos === 1 ? "intento" : "intentos"}`
-    );
+    asignarTextoElemento("p", `Advinaste el numero en ${intentos} ${intentos === 1 ? "intento" : "intentos"}`);
     document.getElementById("reiniciar").removeAttribute("disabled");
   } else {
     //el usuario no acerto
