@@ -13,7 +13,7 @@ function verificarIntento() {
   if (numeroUsuario === numeroSecreto) {
     asignarTextoElemento(
       "p",
-      `Acertaste el numero ${intentos} ${intentos === 1 ? "vez" : "veces"}`
+      `Advinaste el numero en ${intentos} ${intentos === 1 ? "intento" : "intentos"}`
     );
     document.getElementById("reiniciar").removeAttribute("disabled");
   } else {
